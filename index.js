@@ -6,14 +6,15 @@
 
 const convertBtn = document.getElementById("convert")
 const inputField = document.getElementById("input")
+const metersEl = document.getElementById("p-meters")
 let conversion;
 
 addEventListener("click", function() {
-    convertToMeters(inputField.value)
+    conversion = convertToMeters(inputField.value)
+    metersEl.textContent = `${inputField.value} Feet = ${conversion} Meters`
 })
 
 function convertToMeters (input) {
     input = input * 0.3048
     return Math.floor(input * 1000) / 1000
 }
-
