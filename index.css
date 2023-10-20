@@ -1,8 +1,20 @@
+
+:root {
+    --main-darktheme-bg-color: #242424;
+    --main-darktheme-btn-color: #242424;
+    --main-darktheme-hero-color: #6943fe;
+    --main-darktheme-txt-white: white;
+    --main-darktheme-txt-color: #CCC1FF;
+    --main-darktheme-box-bg: #1F2937;
+    --main-darktheme-sec-bg: #273559;
+}
+
 body {
     margin: auto;
     text-align: center;
     max-width: 75%;
     max-height: 75%;
+    background: #242424;
 }
 
 .hero {

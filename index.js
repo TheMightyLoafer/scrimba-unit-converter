@@ -12,13 +12,14 @@ Volume (Gallons/Liters)
 1 liter = 0.26417205 gallons
 */
 
+const darkModeToggle = document.getElementById("switch")
 const convertBtn = document.getElementById("convert")
 const inputField = document.getElementById("input")
 const metersEl = document.getElementById("p-meters")
 const poundsEl = document.getElementById("p-pounds")
 const gallonsEl = document.getElementById("p-gallons")
 
-addEventListener("click", function() {
+convertBtn.addEventListener("click", function() {
     let value = inputField.value
     const conversions = convertUnits(value)
     metersEl.textContent = `${value} Feet = ${conversions.feet} Meters | ${value} Meters = ${conversions.meters} Feet`
@@ -45,6 +46,10 @@ function convertUnits(value) {
 
     return results
 }
+
+darkModeToggle.addEventListener("click", () => {
+
+})
 
 /* 
 
